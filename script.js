@@ -48,7 +48,7 @@ function initThreeJS() {
     const shapes = [];
     
     // Increase number of shapes and distribute them better
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 80; i++) {
       const geometry = geometries[Math.floor(Math.random() * geometries.length)];
       const material = materials[Math.floor(Math.random() * materials.length)];
       const mesh = new THREE.Mesh(geometry, material);
