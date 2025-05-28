@@ -227,8 +227,8 @@ function initCursorEffect() {
 
   // Smooth cursor following
   function updateCursor() {
-    cursorX += (mouseX - cursorX) * 0.1;
-    cursorY += (mouseY - cursorY) * 0.1;
+    cursorX = mouseX;
+    cursorY = mouseY;
     
     cursor.style.left = cursorX - 10 + 'px';
     cursor.style.top = cursorY - 10 + 'px';
