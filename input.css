@@ -90,13 +90,16 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.home-img{
+  display: inline-block;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.home-img:hover{
+  scale: 1.1;
+  transition: scale 0.3s ease, blur 0.3s ease;
+
 }
 
 nav ul {
