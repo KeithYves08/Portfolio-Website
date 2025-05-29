@@ -141,6 +141,7 @@ nav a:hover::after {
   cursor: pointer;
   padding: 0.5rem; /* Fixed: removed space */
   background: none;
+  color: white;
   border: none;
 }
 
