@@ -139,33 +139,18 @@ nav a:hover::after {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  padding: 0.5 rem;
+  padding: 0.5rem; /* Fixed: removed space */
   background: none;
   border: none;
 }
 
-.hamburger span{
-  width: 25px;
-  height: 3px;
-  background: var(--accent-gradient);
-  margin: 2px 0;
-  transition: all 0.3s ease;
-  border-radius: 2px;
-}
-
-/*Hamburger Animation*/
+/* Remove the duplicate rule and fix the animation */
 .hamburger.active span:nth-child(1){
   transform: rotate(45deg) translate(5px, 5px);
 }
-
-.hamburger.active span:nth-child(1){
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
 .hamburger.active span:nth-child(2){
   opacity: 0;  
 }
-
 .hamburger.active span:nth-child(3){
   transform: rotate(-45deg) translate(7px, -6px);
 }
